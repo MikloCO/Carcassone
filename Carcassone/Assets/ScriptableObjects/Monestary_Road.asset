@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9abe4261e989d48ba371e94ad1df16, type: 3}
+  m_Name: Monestary_Road
+  m_EditorClassIdentifier: 
+  name: Monestary
+  description: A monastery is completed when it is surrounded by 8 tiles. Each of
+    the monastery's tiles (the 8 surrounding tiles and the one with the monastery
+    itself) is worth 1 point. Scoring always occurs at the end of a player's turn.
+    At that moment, each player with a meeple in a scored feature earns points.
+  artWork: {fileID: 21300000, guid: 1774d95e21cae544b8c5ce49e2ba9b65, type: 3}
+  city_edges: 0
+  road_edges: 1
+  number_in_game: 2
+  flipped: 0
+  card_id: Monestary_Road

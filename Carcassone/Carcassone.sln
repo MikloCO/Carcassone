@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gentleland.SteampunkUI.DemoAndExample", "Gentleland.SteampunkUI.DemoAndExample.csproj", "{BEC2589A-0A9A-E661-B452-10F8ECBA941C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{CC8C261E-DB44-7972-29BD-7484FA1CA4A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gentleland.Utils.SteampunkUI", "Gentleland.Utils.SteampunkUI.csproj", "{B45A698B-006B-9957-64D9-9F5DD95EDD46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEC2589A-0A9A-E661-B452-10F8ECBA941C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC2589A-0A9A-E661-B452-10F8ECBA941C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC2589A-0A9A-E661-B452-10F8ECBA941C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC2589A-0A9A-E661-B452-10F8ECBA941C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8C261E-DB44-7972-29BD-7484FA1CA4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8C261E-DB44-7972-29BD-7484FA1CA4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8C261E-DB44-7972-29BD-7484FA1CA4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8C261E-DB44-7972-29BD-7484FA1CA4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45A698B-006B-9957-64D9-9F5DD95EDD46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45A698B-006B-9957-64D9-9F5DD95EDD46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45A698B-006B-9957-64D9-9F5DD95EDD46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45A698B-006B-9957-64D9-9F5DD95EDD46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
