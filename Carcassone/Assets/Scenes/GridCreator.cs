@@ -54,9 +54,6 @@ public class GridCreator : MonoBehaviour
                 reference.GetComponent<MeshRenderer>().enabled = false;
             }
         }
-
-
-
     }
 
     public Texture Get_OutlineTexture()

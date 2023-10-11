@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class ActionTracker : MonoBehaviour
 {
-    //List<GameplayActions> GameActions;
+    List<int> SelectedTile;
+    void Start()
+    {
+        GameObject gridParent = GameObject.Find("Grid");
 
-    //public void AddGameAction(GameplayActions action)
-    //{
-    //}
+        for (int i = 0; i < gridParent.transform.childCount; i++)
+        {
+            GameObject child = gridParent.transform.GetChild(i).gameObject;
+            if (child.GetComponent<MouseOver>() == null)
+            {
+                child.AddComponent<MouseOver>();
+                child.GetComponent<MouseOver>().OnCellClick += OnCellClick;
+            }
+        }
+    }
 
-
-    //public GameAction(float timestamp, string description)
-    //{
-
-    //}
-    // Start is called before the first frame update
-    
+    private void OnCellClick(int index)
+    {
+        SelectedTile.Add(index);
+    }
 }
 
 

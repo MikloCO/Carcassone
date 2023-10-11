@@ -7,11 +7,19 @@ public class MouseOver : MonoBehaviour
 {
     public event Action<int> OnCellClick;
     public event Action<int> HandleOnExitCell;
+    public event Action<int> HandleOnEnterCall;
+
 
 
     void OnMouseEnter()
     {
-        this.GetComponent<MeshRenderer>().enabled = true;
+        if(gameObject.layer == LayerMask.NameToLayer("Ignore Raycast"))
+        {
+            return;
+        }
+        int i = this.GetComponent<Internal_id>().GetID();
+        HandleOnEnterCall?.Invoke(i);
+
     }
     private void OnMouseExit()
     {
@@ -19,8 +27,12 @@ public class MouseOver : MonoBehaviour
         HandleOnExitCell?.Invoke(i);
     }
 
-    private void OnMouseDown()
+    private void OnMouseUp()
     {
+        if (gameObject.layer == LayerMask.NameToLayer("Ignore Raycast"))
+        {
+            return;
+        }
         int i = this.GetComponent<Internal_id>().GetID();
         OnCellClick?.Invoke(i);
     }
